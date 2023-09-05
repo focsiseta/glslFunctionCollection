@@ -1,5 +1,5 @@
 float rect(vec2 coords,vec2 position,vec2 size){
-    coords = position - coords;
+    coords = position + coords;
     vec2 ret = step(size,coords*(1. - coords));
     return ret.x * ret.y;
 }
