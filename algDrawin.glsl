@@ -9,3 +9,9 @@ float plot(vec2 coords,float value){
   return step(value - .1,coords.y) * step(coords.y,value + .1);
 
 }
+
+vec2 tilling(vec2 coords,vec2 scale){
+    coords *= scale;
+	return fract(coords);
+    
+}
