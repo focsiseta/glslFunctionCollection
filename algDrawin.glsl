@@ -15,3 +15,7 @@ vec2 tilling(vec2 coords,vec2 scale){
 	return fract(coords);
     
 }
+
+#define PI 3.14159265358979323846
+//one second is 180 degrees which translates to 0 to 1 in one second and 0 to -1 the next second
+float alt = sin(iTime * PI);
